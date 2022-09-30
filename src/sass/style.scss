@@ -1,0 +1,76 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/buttons';
+
+* {
+    font-family: sans-serif 'Poppins';
+    margin: 0;
+    padding: 0;
+    // z-index: 1;
+}
+
+
+.container {
+    // width: 1140px;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    // &-active {
+    //     position: fixed;
+    //     left: 385px
+    // }
+}
+
+.separator {
+    width: 60px;
+    height: 2px;
+    background-color: $main-color;
+}
+
+.text12 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.text14 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.subtitle14 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.title20 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.subtitle16 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.title36 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+}
+
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/experience';
+@import 'base/skills';
+
+.active {
+    opacity: 1;
+}

@@ -1,0 +1,33 @@
+@mixin circle-center {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -15%);
+	content: '';
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	background-color: $main-color;
+	z-index: -1;
+}
+
+@mixin circle-left {
+	position: absolute;
+	transform: translate(-35%, -15%);
+	content: '';
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	background-color: $main-color;
+	z-index: -1;
+}
+
+@mixin circle-left-up {
+	position: absolute;
+	transform: translate(-50%, -35%);
+	content: '';
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	background-color: $main-color;
+	z-index: -1;
+}

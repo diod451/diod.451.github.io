@@ -1,0 +1,40 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000u\u0000l\u0000s\u0000o\u0000m\u0000e\u0000t\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "gulpfile.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "animate.css": "latest",
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-cli": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "7.1.0",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "node-fetch": "latest",
+    "normalize.css": "latest",
+    "sass": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diod451/Pulsometer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diod451/Pulsometer/issues"
+  },
+  "homepage": "https://github.com/diod451/Pulsometer#readme"
+}

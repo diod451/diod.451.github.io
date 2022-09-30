@@ -1,0 +1,85 @@
+.about {
+	padding-top: 120px;
+
+	&-wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: (400px 330px 310px);
+		grid-template-rows: repeat(250px, 350px);
+		grid-auto-rows: repeat(2, 300px);
+
+		grid-template-areas:
+			"photo text text"
+			"photo skills skills";
+	}
+
+	&__photo {
+		grid-area: photo;
+
+		& img {
+			max-width: 400px;
+			max-height: 600px;
+		}
+	}
+
+	&__text {
+		grid-area: text;
+		padding-left: 68px;
+
+	}
+
+
+	&__skills {
+		grid-area: skills;
+		padding-left: 68px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__subtitle {
+		padding-left: 12px;
+
+		&::before {
+			@include circle-left;
+		}
+	}
+
+	&__title {}
+
+	&__line {
+		margin-top: 4px;
+	}
+
+	&__description {
+		margin-top: 20px;
+	}
+
+	&__element {
+		display: flex;
+		flex-direction: row;
+		width: 260px;
+		position: relative;
+
+		.skills {
+
+			&__icon {
+				padding-top: 20px;
+				padding-left: 20px;
+
+				&::before {
+					@include circle-left-up;
+
+				}
+			}
+
+			&__text {
+				padding-left: 20px;
+			}
+
+			&__title {}
+
+			&__description {}
+		}
+	}
+}

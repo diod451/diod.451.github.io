@@ -1,0 +1,63 @@
+.experience {
+	margin-top: 120px;
+
+	&__subtitle {
+
+		text-align: center;
+
+		&::before {
+			@include circle-center
+		}
+	}
+
+	&__title {
+		margin-top: 6px;
+		text-align: center;
+	}
+
+	&__line {
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	&__storyline {
+		display: grid;
+		grid-template-columns: repeat(2, 425px);
+		gap: 136px;
+		justify-content: center;
+	}
+
+	&__element {
+		margin-top: 45px;
+		width: 375px;
+	}
+}
+
+.element {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: (1fr 10fr);
+		grid-template-rows: (1fr 1fr);
+		grid-template-areas:
+			"icon title"
+			"icon subtitle";
+	}
+
+	&__icon {
+		grid-area: icon;
+
+		&::before {
+			@include circle-left-up;
+		}
+	}
+
+	&__title {
+
+		grid-area: title;
+	}
+
+	&__subtitle {
+		grid-area: subtitle;
+
+	}
+}
