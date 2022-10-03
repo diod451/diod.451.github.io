@@ -502,11 +502,15 @@ aside.main__social {
   border-bottom: 2px solid black;
   color: black;
 }
+.social-link svg:hover {
+  fill: #FFA501;
+}
 
 .menu {
   position: fixed;
   visibility: hidden;
   opacity: 0;
+  left: -100%;
   transition: all 1s;
   z-index: 10;
 }
@@ -768,6 +772,16 @@ aside.main__social {
   grid-template-rows: repeat(2, 270px);
   grid-auto-rows: 1fr;
 }
+.skills__charts {
+  margin-top: 120px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 350px);
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  grid-template-rows: repeat(2, 70px);
+  row-gap: 30px;
+}
 
 .feature {
   width: 270px;
@@ -784,6 +798,49 @@ aside.main__social {
 }
 .feature__description {
   padding-top: 12px;
+}
+
+.charts {
+  font-size: 14px;
+  line-height: 21px;
+}
+.charts__item {
+  position: relative;
+}
+.charts__name {
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  padding-left: 18px;
+}
+.charts__name::before {
+  position: absolute;
+  transform: translate(-35%, -15%);
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #FFA501;
+  z-index: -1;
+}
+.charts__percentage {
+  display: inline-block;
+  float: right;
+  font-weight: 500;
+}
+.charts__bar {
+  width: 350px;
+  height: 14px;
+  background-color: #E8E4DE;
+  border-radius: 4px;
+  margin-top: 56px;
+  z-index: 1;
+}
+.charts__bar span {
+  display: block;
+  height: 100%;
+  background-color: #FFA501;
+  border-radius: 4px;
 }
 
 .active {

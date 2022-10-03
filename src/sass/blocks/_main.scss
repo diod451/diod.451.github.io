@@ -80,7 +80,6 @@
 		left: -90px;
 		top: 50%;
 		transform: rotate(-90deg);
-
 	}
 }
 
@@ -101,12 +100,22 @@ aside.main__social {
 		border-bottom: 2px solid black;
 		color: black;
 	}
+
+	&-link {
+		& svg {
+			&:hover {
+				fill: $main-color;
+			}
+		}
+
+	}
 }
 
 .menu {
 	position: fixed;
 	visibility: hidden;
 	opacity: 0;
+	left: -100%;
 	transition: all 1s;
 	z-index: 10;
 
