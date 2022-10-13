@@ -1,0 +1,149 @@
+.contacts {
+	margin-top: 120px;
+	margin-bottom: 117px;
+
+	&__grid {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 400px 585px;
+		// grid-template-rows: 226px 338px;
+		grid-template-rows: 226px auto;
+		grid-template-areas:
+			"photo head"
+			"photo form"
+		;
+	}
+
+	&__subtitle {
+		padding-left: 10px;
+
+		&::before {
+			@include circle-left;
+		}
+	}
+
+	&__photo {
+		width: 400px;
+		grid-area: photo;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__head {
+		margin-left: 68px;
+		grid-area: head;
+
+		& .separator {
+			margin-top: 4px;
+		}
+	}
+
+	&__text {
+		margin-top: 20px;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	&__social {
+		margin-top: 20px;
+	}
+
+	&__link {
+		padding-right: 25px;
+
+		& img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	&__form {
+		margin: 30px 0 0 68px;
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 280px 280px;
+		grid-template-rows: 45px 193px 45px;
+		grid-template-areas:
+			"input email"
+			"textarea textarea"
+			"button button";
+		grid-area: form;
+		column-gap: 25px;
+		row-gap: 30px;
+
+		& label {
+			margin: 0;
+			position: absolute;
+			left: 20px;
+			top: -17px;
+			background-color: #fff;
+			padding: 5px 10px;
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		#name {
+			grid-area: name;
+		}
+
+		#email {
+			grid-area: email;
+		}
+	}
+
+	&__input {
+		position: relative;
+
+		& input {
+			width: 100%;
+			height: 100%;
+			border: 1px solid black;
+			padding: 13px 20px;
+		}
+	}
+
+	&__textarea {
+		grid-area: textarea;
+		position: relative;
+
+		& textarea {
+			width: 100%;
+			height: 100%;
+			border: 1px solid black;
+			position: relative;
+			padding: 13px 20px;
+			resize: none;
+		}
+	}
+
+	&__confirm {
+		width: 100%;
+		grid-area: button;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		// grid-area: button;
+	}
+
+	&__policy {
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 35px;
+
+		input,
+		p {
+			display: inline;
+			padding-left: 10px;
+		}
+	}
+
+
+}

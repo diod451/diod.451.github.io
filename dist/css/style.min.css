@@ -353,6 +353,7 @@ template {
   font-size: 14px;
   line-height: 21px;
   outline: none;
+  border: none;
 }
 .btn__transparent {
   background-color: transparent;
@@ -366,7 +367,7 @@ template {
 
 .container {
   position: relative;
-  width: 60%;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -465,6 +466,7 @@ template {
   right: 30px;
   width: 36px;
   cursor: pointer;
+  z-index: 10;
 }
 .main__hamburger_element {
   width: 30px;
@@ -586,25 +588,31 @@ aside.main__social {
 .about-wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: 400px 330px 310px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 400px 640px;
   grid-template-rows: repeat(250px, 350px);
   grid-auto-rows: repeat(2, 300px);
-  grid-template-areas: "photo text text" "photo skills skills";
+  -moz-column-gap: 68px;
+       column-gap: 68px;
+  grid-template-areas: "photo text" "photo text";
 }
 .about__photo {
   grid-area: photo;
+  width: 100%;
 }
 .about__photo img {
   max-width: 400px;
   max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__text {
   grid-area: text;
-  padding-left: 68px;
+  width: 570px;
 }
 .about__skills {
   grid-area: skills;
-  padding-left: 68px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -622,17 +630,24 @@ aside.main__social {
   background-color: #FFA501;
   z-index: -1;
 }
+.about__title {
+  margin-top: 6px;
+}
 .about__line {
   margin-top: 4px;
 }
 .about__description {
   margin-top: 20px;
 }
+.about__skills {
+  margin-top: 40px;
+}
 .about__element {
   display: flex;
   flex-direction: row;
   width: 260px;
   position: relative;
+  margin-bottom: 20px;
 }
 .about__element .skills__icon {
   padding-top: 20px;
@@ -650,6 +665,10 @@ aside.main__social {
 }
 .about__element .skills__text {
   padding-left: 20px;
+}
+.about__element .skills__title {
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 .experience {
   margin-top: 120px;
@@ -704,8 +723,7 @@ aside.main__social {
 .experience__storyline {
   display: grid;
   grid-template-columns: repeat(2, 425px);
-  gap: 136px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .experience__element {
   position: relative;
@@ -716,7 +734,7 @@ aside.main__social {
 
 .element__wrapper {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 2fr 15fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "icon title" "icon subtitle";
 }
@@ -763,6 +781,10 @@ aside.main__social {
   margin: 0 auto;
   margin-top: 25px;
 }
+.skills__icon img {
+  width: 20px;
+  height: 30px;
+}
 .skills__features {
   margin-top: 60px;
   display: grid;
@@ -784,8 +806,8 @@ aside.main__social {
 }
 
 .feature {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #000;
   padding-left: 30px;
   padding-right: 30px;
@@ -843,6 +865,691 @@ aside.main__social {
   border-radius: 4px;
 }
 
+.works {
+  margin-top: 126px;
+}
+.works__head {
+  text-align: center;
+}
+.works__subtitle::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #FFA501;
+  z-index: -1;
+}
+.works__title {
+  margin-top: 6px;
+}
+.works .separator {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.works__grid {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(2, 280px);
+  grid-auto-rows: 280px;
+  gap: 5px;
+  grid-template-areas: "uber pulse bread plans" "ipad mac mac plans";
+}
+.works__element {
+  transition: all 0.8s;
+}
+.works__element img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.works #pulse {
+  grid-area: pulse;
+}
+.works #uber {
+  grid-area: uber;
+}
+.works #bread {
+  grid-area: bread;
+}
+.works #ipad {
+  grid-area: ipad;
+}
+.works #mac {
+  grid-area: mac;
+}
+.works #plans {
+  grid-area: plans;
+}
+
+.price__head {
+  text-align: center;
+}
+.price__subtitle {
+  margin-top: 66px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.price__subtitle::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #FFA501;
+  z-index: -1;
+}
+.price .separator {
+  margin: 0 auto;
+  margin-top: 31px;
+}
+.price__grid {
+  margin-top: 60px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 366px);
+  grid-template-rows: repeat(3, 44px);
+  grid-auto-rows: 44px;
+  row-gap: 15px;
+}
+.price__element {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name price" "description description";
+}
+.price__element .element__name {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  display: inline;
+  grid-area: name;
+}
+.price__element .element__name::before {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #FFA501;
+  z-index: -1;
+}
+.price__element .element__price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  display: inline;
+  grid-area: price;
+  justify-self: end;
+}
+.price__element .element__description {
+  padding-top: 5px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  grid-area: description;
+}
+
+.contacts {
+  margin-top: 120px;
+  margin-bottom: 117px;
+}
+.contacts__grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 585px;
+  grid-template-rows: 226px auto;
+  grid-template-areas: "photo head" "photo form";
+}
+.contacts__subtitle {
+  padding-left: 10px;
+}
+.contacts__subtitle::before {
+  position: absolute;
+  transform: translate(-35%, -15%);
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #FFA501;
+  z-index: -1;
+}
+.contacts__photo {
+  width: 400px;
+  grid-area: photo;
+}
+.contacts__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__head {
+  margin-left: 68px;
+  grid-area: head;
+}
+.contacts__head .separator {
+  margin-top: 4px;
+}
+.contacts__text {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.contacts__social {
+  margin-top: 20px;
+}
+.contacts__link {
+  padding-right: 25px;
+}
+.contacts__link img {
+  width: 30px;
+  height: 30px;
+}
+.contacts__form {
+  margin: 30px 0 0 68px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 280px 280px;
+  grid-template-rows: 45px 193px 45px;
+  grid-template-areas: "input email" "textarea textarea" "button button";
+  grid-area: form;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 30px;
+}
+.contacts__form label {
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  top: -17px;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 18px;
+}
+.contacts__form #name {
+  grid-area: name;
+}
+.contacts__form #email {
+  grid-area: email;
+}
+.contacts__input {
+  position: relative;
+}
+.contacts__input input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  padding: 13px 20px;
+}
+.contacts__textarea {
+  grid-area: textarea;
+  position: relative;
+}
+.contacts__textarea textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  padding: 13px 20px;
+  resize: none;
+}
+.contacts__confirm {
+  width: 100%;
+  grid-area: button;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts__policy {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 35px;
+}
+.contacts__policy input,
+.contacts__policy p {
+  display: inline;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1919px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .container {
+    width: 800px;
+  }
+  .text14 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .text12 {
+    font-size: 11px;
+  }
+  .main__social {
+    left: -120px;
+  }
+  .about {
+    padding-top: 80px;
+  }
+  .about-wrapper {
+    grid-template-columns: 280px 480px;
+    grid-template-rows: repeat(250px, 350px);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .about__photo {
+    grid-area: photo;
+    width: 100%;
+  }
+  .about__photo img {
+    width: 100%;
+  }
+  .about__text {
+    width: 100%;
+  }
+  .about__element {
+    width: 240px;
+  }
+  .about__skills {
+    margin-top: 27px;
+  }
+  .experience {
+    margin-top: 80px;
+  }
+  .experience__storyline {
+    grid-template-columns: repeat(2, 360px);
+  }
+  .skills {
+    margin-top: 80px;
+  }
+  .skills__charts {
+    grid-template-columns: repeat(2, 350px);
+    justify-content: space-around;
+  }
+  .skills__features {
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(3, 270px);
+    grid-auto-rows: 1fr;
+  }
+  .works {
+    margin-top: 80px;
+  }
+  .works__grid {
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(3, 260px);
+    grid-template-areas: "uber pulse plans" "mac mac plans" "bread ipad ipad";
+  }
+  .price__grid {
+    grid-template-columns: repeat(2, 320px);
+  }
+  .contacts__grid {
+    grid-template-columns: 300px 500px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .contacts__head {
+    margin-left: 0px;
+  }
+  .contacts__form {
+    margin-left: 0;
+  }
+  .contacts__photo {
+    width: 100%;
+    height: 100%;
+  }
+  .contacts__photo img {
+    -o-object-position: -100px 0;
+       object-position: -100px 0;
+  }
+  .contacts__form {
+    grid-template-columns: 430px;
+    grid-template-rows: 45px 45px 150px 69px;
+    grid-template-areas: "input" "email" "textarea" "button";
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .container {
+    width: 635px;
+  }
+  .text12 {
+    font-size: 10px;
+  }
+  .title36 {
+    font-size: 30px;
+  }
+  .main {
+    background-position: 58% 50%;
+  }
+  .main__social {
+    display: none;
+  }
+  .main__hamburger {
+    right: 20px;
+  }
+  .about-wrapper {
+    grid-template-columns: 280px 326px;
+  }
+  .about__element {
+    width: 100%;
+  }
+  .about__photo {
+    height: 100%;
+  }
+  .about__photo img {
+    height: 100%;
+  }
+  .skills__charts {
+    grid-template-columns: repeat(2, 295px);
+  }
+  .skills__features {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 12px;
+  }
+  .skills .charts__bar {
+    width: 295px;
+  }
+  .feature {
+    padding-left: 15px;
+    width: 200px;
+    height: 200px;
+  }
+  .feature__logo {
+    padding-top: 15px;
+  }
+  .feature__name {
+    padding-top: 10px;
+  }
+  .feature__description {
+    padding-top: 4px;
+    line-height: 12px;
+  }
+  .experience__storyline {
+    grid-template-columns: repeat(2, 300px);
+    justify-content: space-between;
+  }
+  .experience__element {
+    width: 300px;
+  }
+  .experience__element .element__wrapper {
+    grid-template-columns: 2fr 10fr;
+  }
+  .works__grid {
+    grid-template-columns: repeat(3, 210px);
+    grid-template-rows: repeat(3, 210px);
+  }
+  .price__grid {
+    grid-template-columns: repeat(2, 260px);
+    row-gap: 30px;
+  }
+  .price__element {
+    grid-template-columns: 6fr 4fr;
+  }
+  .price__element .element__name {
+    font-size: 13px;
+  }
+  .price__element .element__price {
+    font-size: 13px;
+  }
+  .price__element .element__description {
+    font-size: 12px;
+  }
+  .contacts {
+    margin-top: 80px;
+  }
+  .contacts__grid {
+    grid-template-columns: 250px 385px;
+    grid-template-rows: 200px auto;
+  }
+  .contacts__text {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .contacts__social {
+    margin-top: 10px;
+  }
+  .contacts__link img {
+    width: 20px;
+    height: 20px;
+  }
+  .contacts__form {
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: calc(87% - 40px);
+    margin-right: 80px;
+  }
+  .separator {
+    width: 110px;
+  }
+  .text12 {
+    font-size: 12px;
+  }
+  .title36 {
+    line-height: 40px;
+    font-size: 24px;
+  }
+  .main {
+    background-position: 60% 50%;
+  }
+  .main__title {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .about {
+    padding-top: 30px;
+  }
+  .about-wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: 600px 500px;
+    justify-content: center;
+    grid-template-areas: "photo" "text";
+  }
+  .about__photo {
+    width: 100%;
+  }
+  .about__photo img {
+    min-width: 100%;
+  }
+  .about__text {
+    margin-top: 30px;
+  }
+  .experience__storyline {
+    width: calc(100% + 60px);
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
+  .experience__column {
+    margin-top: 40px;
+  }
+  .experience__column:nth-child(2) {
+    margin-top: 50px;
+  }
+  .experience__element {
+    width: calc(100% - 40px);
+  }
+  .skills {
+    width: calc(100% - 40px);
+  }
+  .skills__features {
+    grid-template-columns: repeat(2, 185px);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+  }
+  .skills__features .feature {
+    width: 185px;
+    height: 250px;
+  }
+  .skills__features .feature__description {
+    font-size: 12px;
+  }
+  .skills__charts {
+    width: calc(100% - 0px);
+    grid-template-columns: minmax(400px, 100%);
+    justify-content: start;
+  }
+  .skills .charts__bar {
+    width: 100%;
+  }
+  .works__grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "uber plans" "pulse plans " "bread ipad" "mac mac";
+  }
+  .price__grid {
+    grid-template-columns: minmax(366px, calc(100% - 40px));
+    grid-template-rows: repeat(6, 44px);
+  }
+  .price__element .element__description {
+    font-size: 12px;
+  }
+  .contacts__grid {
+    grid-template-columns: 100%;
+    grid-template-areas: "head" "form";
+  }
+  .contacts__photo {
+    display: none;
+  }
+  .contacts__form {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .about {
+    margin-top: 40px;
+  }
+  .about-wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 600px auto;
+  }
+  .about__photo {
+    width: 100%;
+  }
+  .about__photo img {
+    max-width: 320px;
+  }
+  .experience__storyline {
+    width: 100%;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills__features {
+    margin-top: 20px;
+    grid-template-columns: 270px;
+    grid-template-rows: repeat(7, 270px);
+  }
+  .skills .feature {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+  }
+  .skills .feature__logo {
+    padding-top: 30px;
+  }
+  .skills .feature__name {
+    padding-top: 20px;
+  }
+  .skills .feature__description {
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .skills__charts {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .works__grid {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(6, 320px);
+    gap: 20px;
+    grid-template-areas: "uber" "pulse " "bread" "plans" "mac" "ipad";
+  }
+  .price__grid {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(6, 44px);
+  }
+  .contacts__form {
+    grid-template-columns: 100%;
+    grid-template-rows: 45px 45px 150px 101px;
+  }
+  .contacts__text {
+    font-size: 14px;
+  }
+  .contacts__link img {
+    width: 30px;
+    height: 30px;
+  }
+  .contacts__confirm {
+    flex-direction: column-reverse;
+  }
+  .contacts__button {
+    margin-top: 20px;
+  }
+  .contacts__policy {
+    width: 240px;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 335px;
+  }
+  .main__title {
+    font-size: 30px;
+  }
+  .about-wrapper {
+    grid-template-columns: 100%;
+  }
+  .works__grid {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(6, 300px);
+  }
+  .price__grid {
+    grid-template-columns: 270px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 280px;
+  }
+  .works__grid {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(6, 280px);
+  }
+  .price__grid {
+    grid-template-columns: 250px;
+    margin-left: 30px;
+  }
+}
 .active {
   opacity: 1;
 }

@@ -9,19 +9,13 @@
     font-family: sans-serif 'Poppins';
     margin: 0;
     padding: 0;
-    // z-index: 1;
 }
 
-
 .container {
-    // width: 1140px;
     position: relative;
-    width: 60%;
+    // width: 60%;
+    width: 1140px;
     margin: 0 auto;
-    // &-active {
-    //     position: fixed;
-    //     left: 385px
-    // }
 }
 
 .separator {
@@ -70,6 +64,11 @@
 @import 'blocks/about';
 @import 'blocks/experience';
 @import 'blocks/skills';
+@import 'blocks/works';
+@import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/media';
+
 
 .active {
     opacity: 1;

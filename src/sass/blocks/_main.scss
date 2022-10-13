@@ -3,6 +3,9 @@
 	background: url(../img/main_bg.jpg) no-repeat top/cover;
 	top: 0px;
 
+	& .container {
+		// margin-left: 200px;
+	}
 
 	&__subtitle {
 		position: relative;
@@ -54,6 +57,7 @@
 		right: 30px;
 		width: 36px;
 		cursor: pointer;
+		z-index: 10;
 
 		&_element {
 			// display: block;

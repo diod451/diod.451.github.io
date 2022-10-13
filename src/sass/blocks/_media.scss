@@ -1,0 +1,649 @@
+@media only screen and (max-width: 1919px) {
+	.container {
+		width: 1140px;
+	}
+}
+
+@media only screen and (max-width: 1439px) {
+	.container {
+		width: 800px;
+	}
+
+	.text14 {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.text12 {
+		font-size: 11px;
+	}
+
+	.main__social {
+		left: -120px;
+	}
+
+	.about {
+		padding-top: 80px;
+
+		&-wrapper {
+			grid-template-columns: (280px 480px);
+			grid-template-rows: repeat(250px, 350px);
+			column-gap: 30px;
+		}
+
+		&__photo {
+			grid-area: photo;
+			width: 100%;
+
+			& img {
+				width: 100%;
+			}
+		}
+
+		&__text {
+			width: 100%;
+		}
+
+		&__element {
+			width: 240px;
+		}
+
+		&__skills {
+			margin-top: 27px;
+		}
+	}
+
+	.experience {
+		margin-top: 80px;
+
+		&__storyline {
+			grid-template-columns: repeat(2, 360px);
+
+		}
+	}
+
+	.skills {
+		margin-top: 80px;
+
+		&__charts {
+			grid-template-columns: repeat(2, 350px);
+			justify-content: space-around;
+		}
+
+		&__features {
+			grid-template-columns: repeat(3, 270px);
+			grid-template-rows: repeat(3, 270px);
+			grid-auto-rows: (1fr);
+		}
+	}
+
+	.works {
+		margin-top: 80px;
+
+		&__grid {
+			grid-template-columns: repeat(3, 260px);
+			grid-template-rows: repeat(3, 260px);
+			grid-template-areas:
+				"uber pulse plans"
+				"mac mac plans"
+				"bread ipad ipad";
+			// gap: 10px;
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: repeat(2, 320px);
+		}
+	}
+
+	.contacts {
+		&__grid {
+			grid-template-columns: 300px 500px;
+			column-gap: 30px;
+			// justify-content: space-between;
+		}
+
+		&__head {
+			margin-left: 0px;
+		}
+
+		&__form {
+			margin-left: 0;
+		}
+
+		&__photo {
+			width: 100%;
+			height: 100%;
+
+			& img {
+				object-position: -100px 0;
+			}
+		}
+
+		&__form {
+			grid-template-columns: 430px;
+			grid-template-rows: 45px 45px 150px 69px;
+			grid-template-areas:
+				"input"
+				"email"
+				"textarea"
+				"button";
+
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.container {
+		width: 635px;
+	}
+
+	.text12 {
+		font-size: 10px;
+	}
+
+	.title36 {
+		font-size: 30px;
+	}
+
+	.main {
+		background-position: 58% 50%;
+
+		&__social {
+			display: none;
+		}
+
+		&__hamburger {
+			right: 20px;
+		}
+	}
+
+	.about {
+		&-wrapper {
+			grid-template-columns: 280px 326px;
+		}
+
+		&__element {
+			width: 100%;
+		}
+
+		&__photo {
+			height: 100%;
+
+			& img {
+				height: 100%;
+			}
+		}
+	}
+
+	.skills {
+		&__charts {
+			grid-template-columns: repeat(2, 295px);
+		}
+
+		&__features {
+			grid-template-columns: repeat(3, 200px);
+			grid-template-rows: repeat(3, 200px);
+			gap: 12px;
+		}
+
+		& .charts__bar {
+			width: 295px;
+		}
+	}
+
+	.feature {
+		padding-left: 15px;
+		width: 200px;
+		height: 200px;
+
+		&__logo {
+			padding-top: 15px;
+		}
+
+		&__name {
+			padding-top: 10px;
+		}
+
+		&__description {
+			padding-top: 4px;
+			line-height: 12px;
+		}
+	}
+
+	.experience {
+		&__storyline {
+			grid-template-columns: repeat(2, 300px);
+			// gap: 34px;
+			justify-content: space-between;
+			// justify-content: center;
+		}
+
+		&__element {
+			width: 300px;
+
+			& .element__wrapper {
+				grid-template-columns: 2fr 10fr;
+			}
+		}
+	}
+
+	.works {
+		&__grid {
+			grid-template-columns: repeat(3, 210px);
+			grid-template-rows: repeat(3, 210px);
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: repeat(2, 260px);
+			row-gap: 30px;
+		}
+
+		&__element {
+			grid-template-columns: 6fr 4fr;
+
+			& .element {
+				&__name {
+					font-size: 13px;
+				}
+
+				&__price {
+					font-size: 13px;
+				}
+
+				&__description {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.contacts {
+		margin-top: 80px;
+
+		&__grid {
+			grid-template-columns: 250px 385px;
+			grid-template-rows: 200px auto;
+		}
+
+		&__text {
+			font-size: 12px;
+			margin-top: 10px;
+		}
+
+		&__social {
+			margin-top: 10px;
+		}
+
+		&__link {
+			& img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&__form {
+			// grid-template-columns: 385px;
+			grid-template-columns: 100%;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.container {
+		width: calc(87% - 40px);
+		// margin-left: 20px;
+		margin-right: 80px;
+	}
+
+	.separator {
+		width: 110px;
+	}
+
+	.text12 {
+		font-size: 12px;
+	}
+
+	.title36 {
+		line-height: 40px;
+		font-size: 24px;
+	}
+
+	.main {
+		background-position: 60% 50%;
+
+		&__title {
+			font-size: 36px;
+			line-height: 39px;
+		}
+	}
+
+	.about {
+		padding-top: 30px;
+
+		&-wrapper {
+			grid-template-columns: auto;
+			grid-template-rows: 600px 500px;
+			justify-content: center;
+			grid-template-areas:
+				"photo"
+				"text";
+		}
+
+		&__photo {
+			width: 100%;
+
+			& img {
+				min-width: 100%;
+			}
+		}
+
+		&__text {
+			margin-top: 30px;
+		}
+	}
+
+	.experience {
+		&__storyline {
+			width: calc(100% + 60px);
+			grid-template-columns: 400px;
+			justify-content: center;
+		}
+
+		&__column {
+			margin-top: 40px;
+
+			&:nth-child(2) {
+				margin-top: 50px;
+			}
+		}
+
+		&__element {
+			width: calc(100% - 40px);
+		}
+	}
+
+	.skills {
+		width: calc(100% - 40px);
+
+		&__features {
+			grid-template-columns: repeat(2, 185px);
+			grid-template-rows: repeat(4, auto);
+			// gap: 20px;
+			justify-content: center;
+
+			& .feature {
+				width: 185px;
+				height: 250px;
+
+				&__description {
+					font-size: 12px;
+				}
+			}
+		}
+
+		&__charts {
+			width: calc(100% - 0px);
+			grid-template-columns: minmax(400px, 100%);
+			justify-content: start;
+		}
+
+		.charts {
+
+
+			&__bar {
+				width: 100%;
+			}
+		}
+	}
+
+	.works {
+		&__grid {
+			grid-template-columns: repeat(2, 250px);
+			grid-template-rows: repeat(4, 250px);
+			grid-template-areas:
+				"uber plans"
+				"pulse plans "
+				"bread ipad"
+				"mac mac";
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: minmax(366px, calc(100% - 40px));
+			// grid-template-columns: 466px;
+			grid-template-rows: repeat(6, 44px);
+		}
+
+		&__element {
+
+			// grid-template-columns: 6fr 4fr;
+			.element {
+				&__description {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.contacts {
+		&__grid {
+			grid-template-columns: 100%;
+			grid-template-areas:
+				"head"
+				"form"
+			;
+		}
+
+		&__photo {
+			display: none;
+		}
+
+		&__form {
+			grid-template-columns: auto;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 425px) {
+	.container {
+		width: 350px;
+		// margin: 0 20px;
+		margin: 0 auto;
+	}
+
+	.main {}
+
+	.about {
+		margin-top: 40px;
+
+		&-wrapper {
+			grid-template-columns: 100%;
+			grid-template-rows: 600px auto;
+		}
+
+		&__photo {
+			width: 100%;
+
+
+			& img {
+				// width: 320px;
+				max-width: 320px;
+
+			}
+		}
+	}
+
+	.experience {
+		&__storyline {
+			width: 100%;
+			grid-template-columns: 100%;
+			justify-content: center;
+		}
+	}
+
+	.skills {
+		width: 100%;
+
+		&__features {
+			margin-top: 20px;
+			grid-template-columns: 270px;
+			grid-template-rows: repeat(7, 270px);
+		}
+
+		& .feature {
+			width: 100%;
+			height: 100%;
+			padding-left: 30px;
+
+			&__logo {
+				padding-top: 30px;
+			}
+
+			&__name {
+				padding-top: 20px;
+			}
+
+			&__description {
+				padding-top: 15px;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+
+		&__charts {
+			grid-template-columns: 100%;
+			justify-content: center;
+		}
+	}
+
+	.works {
+		&__grid {
+			grid-template-columns: 320px;
+			grid-template-rows: repeat(6, 320px);
+			gap: 20px;
+			grid-template-areas: "uber"
+				"pulse "
+				"bread"
+				"plans"
+				"mac"
+				"ipad";
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: 320px;
+			grid-template-rows: repeat(6, 44px);
+		}
+	}
+
+	.contacts {
+		&__form {
+			// grid-template-columns: 340px;
+			grid-template-columns: 100%;
+			grid-template-rows: 45px 45px 150px 101px;
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+
+		&__link {
+			& img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		&__confirm {
+			flex-direction: column-reverse;
+		}
+
+		&__button {
+			margin-top: 20px;
+		}
+
+		&__policy {
+			width: 240px;
+			margin-top: 25px;
+			margin-left: 0;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 375px) {
+	.container {
+		width: 335px;
+	}
+
+	.main {
+		&__title {
+			font-size: 30px;
+		}
+	}
+
+	.about {
+		&-wrapper {
+			grid-template-columns: 100%;
+		}
+	}
+
+	.experience {
+		&__storyline {
+			// grid-template-columns: 300px;
+		}
+	}
+
+	.skills {
+		&__charts {
+			// grid-template-columns: 300px;
+		}
+	}
+
+	.works {
+		&__grid {
+			grid-template-columns: 300px;
+			grid-template-rows: repeat(6, 300px);
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: 270px;
+			margin-left: 30px;
+		}
+	}
+
+	.contacts {
+		&__form {}
+	}
+}
+
+
+@media only screen and (max-width: 320px) {
+	.container {
+		width: 280px;
+	}
+
+	.works {
+		&__grid {
+			grid-template-columns: 280px;
+			grid-template-rows: repeat(6, 280px);
+		}
+	}
+
+	.price {
+		&__grid {
+			grid-template-columns: 250px;
+			margin-left: 30px;
+		}
+	}
+}

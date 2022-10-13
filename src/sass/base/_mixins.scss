@@ -21,6 +21,19 @@
 	z-index: -1;
 }
 
+@mixin circle-left-small {
+	position: absolute;
+	left: -25px;
+	top: 50%;
+	transform: translateY(-50%);
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: $main-color;
+	z-index: -1;
+}
+
 @mixin circle-left-up {
 	position: absolute;
 	transform: translate(-50%, -35%);

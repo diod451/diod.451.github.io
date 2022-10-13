@@ -53,8 +53,8 @@
 	&__storyline {
 		display: grid;
 		grid-template-columns: repeat(2, 425px);
-		gap: 136px;
-		justify-content: center;
+		// gap: 136px;
+		justify-content: space-between;
 	}
 
 	&__element {
@@ -68,7 +68,7 @@
 .element {
 	&__wrapper {
 		display: grid;
-		grid-template-columns: (1fr 10fr);
+		grid-template-columns: (2fr 15fr);
 		grid-template-rows: (1fr 1fr);
 		grid-template-areas:
 			"icon title"

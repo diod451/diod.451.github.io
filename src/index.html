@@ -123,11 +123,13 @@
     <!-- Главная страница -->
     <section class="main">
         <div class="container">
-            <h2 class="main__subtitle">Меня зовут Александра Смит</h2>
-            <h1 class="main__title">Я web-разработчик<br>из города Москва</h1>
-            <div class="main__btns">
-                <a href="#" class="main__btn btn">Портфолио</a>
-                <a href="#" class="main__btn btn btn__transparent">Про меня</a>
+            <div class="main__wrapper">
+                <h2 class="main__subtitle">Меня зовут Александра Смит</h2>
+                <h1 class="main__title">Я web-разработчик<br>из города Москва</h1>
+                <div class="main__btns">
+                    <a href="#" class="main__btn btn">Портфолио</a>
+                    <a href="#" class="main__btn btn btn__transparent">Про меня</a>
+                </div>
             </div>
         </div>
     </section>
@@ -138,51 +140,59 @@
             <div class="about-wrapper">
                 <div class="about__photo"><img src="img/about_me.jpg" alt="My photo"></div>
                 <div class="about__text">
-                    <div class="about__subtitle subtitle16">Про меня</div>
-                    <div class="about__title title20">Меня зовут Александра</div>
-                    <div class="separator about__line"></div>
-                    <div class="about__description text14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </div>
-                </div>
-                <div class="about__skills">
-                    <div class="about__element">
-                        <div class="skills__icon"><img src="icons/web.svg" alt=""></div>
-                        <div class="skills__text">
-                            <div class="skills__title subtitle14">Web-разработка</div>
-                            <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit,
-                                sed do
-                                eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.</div>
+                    <div>
+                        <div class="about__subtitle subtitle16">Про меня</div>
+                        <div class="about__title title20">Меня зовут Александра</div>
+                        <div class="separator about__line"></div>
+                        <div class="about__description text14">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
+                            do
+                            eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea
+                            commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum
                         </div>
                     </div>
-                    <div class="about__element">
-                        <div class="skills__icon"><img src="icons/mobile.svg" alt=""></div>
-                        <div class="skills__text">
-                            <div class="skills__title subtitle14">Разработка приложений</div>
-                            <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit,
-                                sed do
-                                eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.</div>
+                    <div class="about__skills">
+                        <div class="about__element">
+                            <div class="skills__icon"><img src="icons/web.svg" alt=""></div>
+                            <div class="skills__text">
+                                <div class="skills__title subtitle14">Web-разработка</div>
+                                <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="about__element">
-                        <div class="skills__icon"><img src="icons/design.svg" alt=""></div>
-                        <div class="skills__text">
-                            <div class="skills__title subtitle14">UI/UX Design</div>
-                            <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit,
-                                sed do
-                                eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.</div>
+                        <div class="about__element">
+                            <div class="skills__icon"><img src="icons/mobile.svg" alt=""></div>
+                            <div class="skills__text">
+                                <div class="skills__title subtitle14">Разработка приложений</div>
+                                <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.</div>
+                            </div>
+                        </div>
+                        <div class="about__element">
+                            <div class="skills__icon"><img src="icons/design.svg" alt=""></div>
+                            <div class="skills__text">
+                                <div class="skills__title subtitle14">UI/UX Design</div>
+                                <div class="skills__description text12">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -429,6 +439,115 @@
         </div>
     </section>
 
+    <section class="works">
+        <div class="container">
+            <div class="works__head">
+                <h2 class="works__subtitle subtitle16">Портфолио</h2>
+                <div class="works__title title36">Мои работы</div>
+                <div class="separator"></div>
+            </div>
+            <div class="works__grid">
+                <div class="works__element" id="uber"><a href="#"><img src="img/uber.jpg" alt="uber"></a></div>
+                <div class="works__element" id="pulse"><a href="#"><img src="img/pulse.jpg" alt="pulse"></a></div>
+                <div class="works__element" id="bread"><a href="#"><img src="img/bread.jpg" alt="bread"></a></div>
+                <div class="works__element" id="ipad"><a href="#"><img src="img/ipad.jpg" alt="ipad"></a></div>
+                <div class="works__element works__element-wide" id="mac"><a href="#"><img src="img/mac.jpg"
+                            alt="mac"></a>
+                </div>
+                <div class="works__element works__element-high" id="plans"><a href="#"><img src="img/plans.jpg"
+                            alt="plans"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <div class="price__head">
+                <div class="price__subtitle">Прайс-лист</div>
+                <div class="separator"></div>
+            </div>
+
+            <div class="price__grid">
+                <div class="price__element">
+                    <div class="element__name">Landing-page</div>
+                    <div class="element__description">Одностраничный сайт для презентации услуг/товаров/...</div>
+                    <div class="element__price">от 8000 руб.</div>
+                </div>
+                <div class="price__element">
+                    <div class="element__name">Корпоративный сайт</div>
+                    <div class="element__price">от 20000 руб.</div>
+                    <div class="element__description">Сайт для вашего бизнеса или компании</div>
+                </div>
+                <div class="price__element">
+                    <div class="element__name">Интернет-магазин</div>
+                    <div class="element__price">от 30000 руб.</div>
+                    <div class="element__description">Инструмент для ваших продаж в сети</div>
+                </div>
+                <div class="price__element">
+                    <div class="element__name">Web-приложение</div>
+                    <div class="element__price">от 28000 руб.</div>
+                    <div class="element__description">Приложение внутри браузера для лучшего комфорта</div>
+                </div>
+                <div class="price__element">
+                    <div class="element__name">Android/IOS Приложение</div>
+                    <div class="element__price">от 25000 руб.</div>
+                    <div class="element__description">Приложение для смартфона любой ОС</div>
+                </div>
+                <div class="price__element">
+                    <div class="element__name">Дизайн</div>
+                    <div class="element__price">Индивидуально</div>
+                    <div class="element__description">Создам дизайн для вашего сайта/приложения...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+
+            <div class="contacts__grid">
+                <div class="contacts__photo">
+                    <img src="img/about_me.jpg" alt="Me">
+                </div>
+                <div class="contacts__head">
+                    <h2 class="contacts__subtitle subtitle16">Контакты</h2>
+                    <div class="contacts__title title36">Свяжитесь со мной</div>
+                    <div class="separator"></div>
+                    <div class="contacts__text">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
+                        <a href="" class="contacts__link"><img src="icons/facebook.svg" alt=""></a>
+                        <a href="" class="contacts__link"><img src="icons/telegram.svg" alt=""></a>
+                        <a href="" class="contacts__link"><img src="icons/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+                </div>
+                <form class="contacts__form">
+                    <div class="contacts__input">
+                        <input required name="name" type="text">
+                        <label for="name">Ваше имя</label>
+                    </div>
+                    <div class="contacts__input">
+                        <input required name="email" type="email">
+                        <label for="email">Ваша почта</label>
+                    </div>
+                    <div class="contacts__textarea">
+                        <textarea name="text" id="" cols="30" rows="10"></textarea>
+                        <label for="text">Ваше сообщение</label>
+                    </div>
+                    <div class="contacts__confirm">
+                        <button class="contacts__button btn">Отправить сообщение</button>
+                        <div class="contacts__policy">
+                            <input required type="checkbox">
+                            <p>Я согласен(а) <a target="_blank" href="/policy.html">с политикой конфиденциальности</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
